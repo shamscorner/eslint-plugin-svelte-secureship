@@ -1,0 +1,14 @@
+{
+	"eslint.validate": ["javascript", "typescript", "markdown", "svelte", "json", "jsonc", "yaml"],
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit",
+		"source.fixAll.stylelint": "explicit"
+	},
+	"svelte.plugin.typescript.diagnostics.enable": false,
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}
