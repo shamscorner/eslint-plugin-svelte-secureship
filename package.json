@@ -1,5 +1,5 @@
 {
-  "name": "@secureship/eslint-plugin-svelte-monorepo",
+  "name": "@shamscorner/eslint-plugin-svelte-monorepo",
   "description": "eslint-plugin-svelte monorepo",
   "private": true,
   "license": "MIT",
