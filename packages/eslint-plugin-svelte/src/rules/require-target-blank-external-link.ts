@@ -69,7 +69,7 @@ export default createRule('require-target-blank-external-link', {
 			allowReferrer?: boolean;
 			enforceDynamicLinks?: 'always' | 'never';
 		} = context.options[0] || {};
-		const enforceDynamicLinks: 'always' | 'never' = configuration.enforceDynamicLinks || 'always';
+		const enforceDynamicLinks: 'always' | 'never' = configuration.enforceDynamicLinks || 'never';
 
 		return {
 			SvelteElement(node) {
