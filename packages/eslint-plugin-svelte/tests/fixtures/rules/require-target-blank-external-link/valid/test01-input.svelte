@@ -13,3 +13,8 @@
 <a href={link} target="_blank">link</a>
 <a href={link}>link</a>
 <a href="mailto:privacy@secureship.ca">privacy@secureship.ca</a>
+<p>
+	Anyone may contact us at
+	<a href="mailto:privacy@secureship.ca">privacy@secureship.ca</a>
+	to request access to or the correction or update of their personal information.
+</p>
