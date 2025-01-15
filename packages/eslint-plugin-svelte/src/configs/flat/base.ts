@@ -30,7 +30,6 @@ const config: Linter.Config[] = [
 			'no-self-assign': 'off',
 
 			// eslint-plugin-svelte rules
-			'svelte/comment-directive': 'error',
 			'svelte/system': 'error'
 		},
 		processor: 'svelte/svelte'

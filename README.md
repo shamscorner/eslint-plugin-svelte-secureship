@@ -319,26 +319,7 @@ These rules relate to possible syntax or logic errors in Svelte code:
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-| [svelte/infinite-reactive-loop](https://sveltejs.github.io/eslint-plugin-svelte/rules/infinite-reactive-loop/) | Svelte runtime prevents calling the same reactive statement twice in a microtask. But between different microtask, it doesn't prevent. |  |
 | [svelte/invalid-encoding-characters](https://sveltejs.github.io/eslint-plugin-svelte/rules/invalid-encoding-characters/) | Disallow invalid encoding characters that may appear due to incorrect character encoding | :star: |
-| [svelte/no-deprecated-raw-special-elements](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-deprecated-raw-special-elements/) | Recommends not using raw special elements in Svelte versions previous to 5. | :wrench: |
-| [svelte/no-dom-manipulating](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-dom-manipulating/) | disallow DOM manipulating |  |
-| [svelte/no-dupe-else-if-blocks](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-dupe-else-if-blocks/) | disallow duplicate conditions in `{#if}` / `{:else if}` chains | :star: |
-| [svelte/no-dupe-on-directives](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-dupe-on-directives/) | disallow duplicate `on:` directives |  |
-| [svelte/no-dupe-style-properties](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-dupe-style-properties/) | disallow duplicate style properties | :star: |
-| [svelte/no-dupe-use-directives](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-dupe-use-directives/) | disallow duplicate `use:` directives |  |
-| [svelte/no-dynamic-slot-name](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-dynamic-slot-name/) | disallow dynamic slot name | :star::wrench: |
-| [svelte/no-export-load-in-svelte-module-in-kit-pages](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-export-load-in-svelte-module-in-kit-pages/) | disallow exporting load functions in `*.svelte` module in SvelteKit page components. |  |
-| [svelte/no-not-function-handler](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-not-function-handler/) | disallow use of not function in event handler | :star: |
-| [svelte/no-object-in-text-mustaches](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-object-in-text-mustaches/) | disallow objects in text mustache interpolation | :star: |
-| [svelte/no-reactive-reassign](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-reactive-reassign/) | disallow reassigning reactive values |  |
-| [svelte/no-shorthand-style-property-overrides](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-shorthand-style-property-overrides/) | disallow shorthand style properties that override related longhand properties | :star: |
-| [svelte/no-store-async](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-store-async/) | disallow using async/await inside svelte stores because it causes issues with the auto-unsubscribing features |  |
-| [svelte/no-unknown-style-directive-property](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-unknown-style-directive-property/) | disallow unknown `style:property` | :star: |
-| [svelte/require-store-callbacks-use-set-param](https://sveltejs.github.io/eslint-plugin-svelte/rules/require-store-callbacks-use-set-param/) | store callbacks must use `set` param |  |
-| [svelte/require-store-reactive-access](https://sveltejs.github.io/eslint-plugin-svelte/rules/require-store-reactive-access/) | disallow to use of the store itself as an operand. Need to use $ prefix or get function. | :wrench: |
-| [svelte/valid-compile](https://sveltejs.github.io/eslint-plugin-svelte/rules/valid-compile/) | disallow warnings when compiling. | :star: |
-| [svelte/valid-prop-names-in-kit-pages](https://sveltejs.github.io/eslint-plugin-svelte/rules/valid-prop-names-in-kit-pages/) | disallow props other than data or errors in SvelteKit page components. |  |
 
 ## Security Vulnerability
 
@@ -346,8 +327,6 @@ These rules relate to security vulnerabilities in Svelte code:
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-| [svelte/no-at-html-tags](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-at-html-tags/) | disallow use of `{@html}` to prevent XSS attack | :star: |
-| [svelte/no-target-blank](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-target-blank/) | disallow `target="_blank"` attribute without `rel="noopener noreferrer"` |  |
 | [svelte/require-target-blank-external-link](https://sveltejs.github.io/eslint-plugin-svelte/rules/require-target-blank-external-link/) | require `target="_blank"` attribute for external links |  |
 
 ## Best Practices
@@ -356,27 +335,7 @@ These rules relate to better ways of doing things to help you avoid problems:
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-| [svelte/block-lang](https://sveltejs.github.io/eslint-plugin-svelte/rules/block-lang/) | disallows the use of languages other than those specified in the configuration for the lang attribute of `<script>` and `<style>` blocks. | :bulb: |
-| [svelte/button-has-type](https://sveltejs.github.io/eslint-plugin-svelte/rules/button-has-type/) | disallow usage of button without an explicit type attribute |  |
-| [svelte/no-at-debug-tags](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-at-debug-tags/) | disallow the use of `{@debug}` | :star: |
-| [svelte/no-ignored-unsubscribe](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-ignored-unsubscribe/) | disallow ignoring the unsubscribe method returned by the `subscribe()` on Svelte stores. |  |
-| [svelte/no-immutable-reactive-statements](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-immutable-reactive-statements/) | disallow reactive statements that don't reference reactive values. |  |
-| [svelte/no-inline-styles](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-inline-styles/) | disallow attributes and directives that produce inline styles |  |
-| [svelte/no-inspect](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-inspect/) | Warns against the use of `$inspect` directive |  |
-| [svelte/no-reactive-functions](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-reactive-functions/) | it's not necessary to define functions in reactive statements | :bulb: |
-| [svelte/no-reactive-literals](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-reactive-literals/) | don't assign literal values in reactive statements | :bulb: |
-| [svelte/no-svelte-internal](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-svelte-internal/) | svelte/internal will be removed in Svelte 6. |  |
-| [svelte/no-unused-class-name](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-unused-class-name/) | disallow the use of a class in the template without a corresponding style |  |
-| [svelte/no-unused-svelte-ignore](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-unused-svelte-ignore/) | disallow unused svelte-ignore comments | :star: |
-| [svelte/no-useless-children-snippet](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-useless-children-snippet/) | disallow explicit children snippet where it's not needed |  |
-| [svelte/no-useless-mustaches](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-useless-mustaches/) | disallow unnecessary mustache interpolations | :wrench: |
-| [svelte/prefer-const](https://sveltejs.github.io/eslint-plugin-svelte/rules/prefer-const/) | Require `const` declarations for variables that are never reassigned after declared | :wrench: |
-| [svelte/prefer-destructured-store-props](https://sveltejs.github.io/eslint-plugin-svelte/rules/prefer-destructured-store-props/) | destructure values from object stores for better change tracking & fewer redraws | :bulb: |
-| [svelte/require-each-key](https://sveltejs.github.io/eslint-plugin-svelte/rules/require-each-key/) | require keyed `{#each}` block |  |
-| [svelte/require-event-dispatcher-types](https://sveltejs.github.io/eslint-plugin-svelte/rules/require-event-dispatcher-types/) | require type parameters for `createEventDispatcher` |  |
-| [svelte/require-optimized-style-attribute](https://sveltejs.github.io/eslint-plugin-svelte/rules/require-optimized-style-attribute/) | require style attributes that can be optimized |  |
-| [svelte/require-stores-init](https://sveltejs.github.io/eslint-plugin-svelte/rules/require-stores-init/) | require initial value in store |  |
-| [svelte/valid-each-key](https://sveltejs.github.io/eslint-plugin-svelte/rules/valid-each-key/) | enforce keys to use variables defined in the `{#each}` block |  |
+
 
 ## Stylistic Issues
 
@@ -384,24 +343,7 @@ These rules relate to style guidelines, and are therefore quite subjective:
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-| [svelte/derived-has-same-inputs-outputs](https://sveltejs.github.io/eslint-plugin-svelte/rules/derived-has-same-inputs-outputs/) | derived store should use same variable names between values and callback |  |
-| [svelte/first-attribute-linebreak](https://sveltejs.github.io/eslint-plugin-svelte/rules/first-attribute-linebreak/) | enforce the location of first attribute | :wrench: |
-| [svelte/html-closing-bracket-new-line](https://sveltejs.github.io/eslint-plugin-svelte/rules/html-closing-bracket-new-line/) | Require or disallow a line break before tag's closing brackets | :wrench: |
-| [svelte/html-closing-bracket-spacing](https://sveltejs.github.io/eslint-plugin-svelte/rules/html-closing-bracket-spacing/) | require or disallow a space before tag's closing brackets | :wrench: |
-| [svelte/html-quotes](https://sveltejs.github.io/eslint-plugin-svelte/rules/html-quotes/) | enforce quotes style of HTML attributes | :wrench: |
-| [svelte/html-self-closing](https://sveltejs.github.io/eslint-plugin-svelte/rules/html-self-closing/) | enforce self-closing style | :wrench: |
-| [svelte/indent](https://sveltejs.github.io/eslint-plugin-svelte/rules/indent/) | enforce consistent indentation | :wrench: |
-| [svelte/max-attributes-per-line](https://sveltejs.github.io/eslint-plugin-svelte/rules/max-attributes-per-line/) | enforce the maximum number of attributes per line | :wrench: |
-| [svelte/mustache-spacing](https://sveltejs.github.io/eslint-plugin-svelte/rules/mustache-spacing/) | enforce unified spacing in mustache | :wrench: |
-| [svelte/no-extra-reactive-curlies](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-extra-reactive-curlies/) | disallow wrapping single reactive statements in curly braces | :bulb: |
-| [svelte/no-restricted-html-elements](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-restricted-html-elements/) | disallow specific HTML elements |  |
-| [svelte/no-spaces-around-equal-signs-in-attribute](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-spaces-around-equal-signs-in-attribute/) | disallow spaces around equal signs in attribute | :wrench: |
-| [svelte/prefer-class-directive](https://sveltejs.github.io/eslint-plugin-svelte/rules/prefer-class-directive/) | require class directives instead of ternary expressions | :wrench: |
-| [svelte/prefer-style-directive](https://sveltejs.github.io/eslint-plugin-svelte/rules/prefer-style-directive/) | require style directives instead of style attribute | :wrench: |
-| [svelte/shorthand-attribute](https://sveltejs.github.io/eslint-plugin-svelte/rules/shorthand-attribute/) | enforce use of shorthand syntax in attribute | :wrench: |
-| [svelte/shorthand-directive](https://sveltejs.github.io/eslint-plugin-svelte/rules/shorthand-directive/) | enforce use of shorthand syntax in directives | :wrench: |
-| [svelte/sort-attributes](https://sveltejs.github.io/eslint-plugin-svelte/rules/sort-attributes/) | enforce order of attributes | :wrench: |
-| [svelte/spaced-html-comment](https://sveltejs.github.io/eslint-plugin-svelte/rules/spaced-html-comment/) | enforce consistent spacing after the `<!--` and before the `-->` in a HTML comment | :wrench: |
+
 
 ## Extension Rules
 
@@ -409,8 +351,7 @@ These rules extend the rules provided by ESLint itself, or other plugins to work
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-| [svelte/no-inner-declarations](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-inner-declarations/) | disallow variable or `function` declarations in nested blocks | :star: |
-| [svelte/no-trailing-spaces](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-trailing-spaces/) | disallow trailing whitespace at the end of lines | :wrench: |
+
 
 ## SvelteKit
 
@@ -418,7 +359,7 @@ These rules relate to SvelteKit and its best Practices.
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-| [svelte/no-navigation-without-base](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-navigation-without-base/) | disallow using navigation (links, goto, pushState, replaceState) without the base path |  |
+
 
 ## Experimental
 
@@ -426,8 +367,7 @@ These rules relate to SvelteKit and its best Practices.
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-| [svelte/experimental-require-slot-types](https://sveltejs.github.io/eslint-plugin-svelte/rules/experimental-require-slot-types/) | require slot type declaration using the `$$Slots` interface |  |
-| [svelte/experimental-require-strict-events](https://sveltejs.github.io/eslint-plugin-svelte/rules/experimental-require-strict-events/) | require the strictEvents attribute on `<script>` tags |  |
+
 
 ## System
 
@@ -435,18 +375,7 @@ These rules relate to this plugin works:
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-| [svelte/comment-directive](https://sveltejs.github.io/eslint-plugin-svelte/rules/comment-directive/) | support comment-directives in HTML template | :star: |
 | [svelte/system](https://sveltejs.github.io/eslint-plugin-svelte/rules/system/) | system rule for working this plugin | :star: |
-
-## Deprecated
-
-- :warning: We're going to remove deprecated rules in the next major release. Please migrate to successor/new rules.
-- :innocent: We don't fix bugs which are in deprecated rules since we don't have enough resources.
-
-| Rule ID | Replaced by |
-|:--------|:------------|
-| [svelte/@typescript-eslint/no-unnecessary-condition](https://sveltejs.github.io/eslint-plugin-svelte/rules/@typescript-eslint/no-unnecessary-condition/) | This rule is no longer needed when using svelte-eslint-parser>=v0.19.0. |
-| [svelte/no-goto-without-base](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-goto-without-base/) | [svelte/no-navigation-without-base](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-navigation-without-base/) |
 
 <!--RULES_TABLE_END-->
 <!--RULES_SECTION_END-->
