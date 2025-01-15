@@ -12,3 +12,4 @@
 <a href="foo/bar" target="_blank" rel="neoprene noreferrer">link</a>
 <a href={link} target="_blank">link</a>
 <a href={link}>link</a>
+<a href="mailto:privacy@secureship.ca">privacy@secureship.ca</a>

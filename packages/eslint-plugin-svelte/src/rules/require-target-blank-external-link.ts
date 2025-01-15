@@ -15,7 +15,7 @@ function hasExternalLink(node: AST.SvelteStartTag) {
 			attr.key.name === 'href' &&
 			attr.value.length >= 1 &&
 			attr.value[0].type === 'SvelteLiteral' &&
-			/^(?:\w+:|\/\/)/.test(attr.value[0].value)
+			/^(?!mailto:)(?:\w+:|\/\/)/.test(attr.value[0].value)
 	);
 }
 
