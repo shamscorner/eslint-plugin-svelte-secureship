@@ -37,8 +37,9 @@ These rules relate to better ways of doing things to help you avoid problems:
 
 These rules relate to style guidelines, and are therefore quite subjective:
 
-| Rule ID | Description |     |
-| :------ | :---------- | :-- |
+| Rule ID                            | Description                    |          |
+| :--------------------------------- | :----------------------------- | :------- |
+| [svelte/indent](./rules/indent.md) | enforce consistent indentation | :wrench: |
 
 ## Extension Rules
 

@@ -14,6 +14,11 @@ declare module 'eslint' {
 
 export interface RuleOptions {
   /**
+   * enforce consistent indentation
+   * @see https://sveltejs.github.io/eslint-plugin-svelte/rules/indent/
+   */
+  'svelte/indent'?: Linter.RuleEntry<SvelteIndent>
+  /**
    * Disallow invalid encoding characters that may appear due to incorrect character encoding
    * @see https://sveltejs.github.io/eslint-plugin-svelte/rules/invalid-encoding-characters/
    */
@@ -31,6 +36,18 @@ export interface RuleOptions {
 }
 
 /* ======= Declarations ======= */
+// ----- svelte/indent -----
+type SvelteIndent = []|[{
+  indent?: (number | "tab")
+  indentScript?: boolean
+  switchCase?: number
+  alignAttributesVertically?: boolean
+  ignoredNodes?: (string & {
+    [k: string]: unknown | undefined
+  } & {
+    [k: string]: unknown | undefined
+  })[]
+}]
 // ----- svelte/require-target-blank-external-link -----
 type SvelteRequireTargetBlankExternalLink = []|[{
   allowReferrer?: boolean

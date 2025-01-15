@@ -343,7 +343,7 @@ These rules relate to style guidelines, and are therefore quite subjective:
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-
+| [svelte/indent](https://sveltejs.github.io/eslint-plugin-svelte/rules/indent/) | enforce consistent indentation | :wrench: |
 
 ## Extension Rules
 
