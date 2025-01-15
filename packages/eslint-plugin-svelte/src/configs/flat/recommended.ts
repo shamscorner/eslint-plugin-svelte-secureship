@@ -10,6 +10,7 @@ const config: Linter.Config[] = [
 		rules: {
 			// eslint-plugin-svelte rules
 			'svelte/comment-directive': 'error',
+			'svelte/invalid-encoding-characters': 'error',
 			'svelte/no-at-debug-tags': 'warn',
 			'svelte/no-at-html-tags': 'error',
 			'svelte/no-dupe-else-if-blocks': 'error',

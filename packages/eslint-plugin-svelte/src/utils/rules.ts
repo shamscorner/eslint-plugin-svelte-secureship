@@ -16,6 +16,7 @@ import htmlQuotes from '../rules/html-quotes.js';
 import htmlSelfClosing from '../rules/html-self-closing.js';
 import indent from '../rules/indent.js';
 import infiniteReactiveLoop from '../rules/infinite-reactive-loop.js';
+import invalidEncodingCharacters from '../rules/invalid-encoding-characters.js';
 import maxAttributesPerLine from '../rules/max-attributes-per-line.js';
 import mustacheSpacing from '../rules/mustache-spacing.js';
 import noAtDebugTags from '../rules/no-at-debug-tags.js';
@@ -88,6 +89,7 @@ export const rules = [
 	htmlSelfClosing,
 	indent,
 	infiniteReactiveLoop,
+	invalidEncodingCharacters,
 	maxAttributesPerLine,
 	mustacheSpacing,
 	noAtDebugTags,

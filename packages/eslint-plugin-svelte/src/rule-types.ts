@@ -85,6 +85,11 @@ export interface RuleOptions {
    */
   'svelte/infinite-reactive-loop'?: Linter.RuleEntry<[]>
   /**
+   * Disallow invalid encoding characters that may appear due to incorrect character encoding
+   * @see https://sveltejs.github.io/eslint-plugin-svelte/rules/invalid-encoding-characters/
+   */
+  'svelte/invalid-encoding-characters'?: Linter.RuleEntry<[]>
+  /**
    * enforce the maximum number of attributes per line
    * @see https://sveltejs.github.io/eslint-plugin-svelte/rules/max-attributes-per-line/
    */

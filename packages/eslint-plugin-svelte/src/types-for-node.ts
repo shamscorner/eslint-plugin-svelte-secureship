@@ -244,6 +244,9 @@ export type ASTNodeListener = {
 	SvelteText?: (node: AST.SvelteText & ASTNodeWithParent) => void;
 	SvelteHTMLComment?: (node: AST.SvelteHTMLComment & ASTNodeWithParent) => void;
 	SvelteReactiveStatement?: (node: AST.SvelteReactiveStatement & ASTNodeWithParent) => void;
+	SvelteFunctionBindingsExpression?: (
+		node: AST.SvelteFunctionBindingsExpression & ASTNodeWithParent
+	) => void;
 };
 
 export type ESNodeListener = {
@@ -465,4 +468,7 @@ export type SvelteNodeListener = {
 	SvelteSpecialDirectiveKey?: (node: AST.SvelteSpecialDirectiveKey & ASTNodeWithParent) => void;
 	SvelteText?: (node: AST.SvelteText & ASTNodeWithParent) => void;
 	SvelteHTMLComment?: (node: AST.SvelteHTMLComment & ASTNodeWithParent) => void;
+	SvelteFunctionBindingsExpression?: (
+		node: AST.SvelteFunctionBindingsExpression & ASTNodeWithParent
+	) => void;
 };

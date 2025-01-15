@@ -1,14 +1,16 @@
 ---
 pageClass: 'rule-details'
 sidebarDepth: 0
-title: 'svelte/require-target-blank-external-link'
-description: 'require `target="_blank"` attribute for external links'
+title: 'svelte/invalid-encoding-characters'
+description: 'Disallow invalid encoding characters that may appear due to incorrect character encoding'
 since: 'v0.0.4'
 ---
 
-# svelte/require-target-blank-external-link
+# svelte/invalid-encoding-characters
 
-> require `target="_blank"` attribute for external links
+> Disallow invalid encoding characters that may appear due to incorrect character encoding
+
+- :gear: This rule is included in `"plugin:svelte/recommended"`.
 
 ## :book: Rule Details
 
@@ -115,5 +117,5 @@ This rule was introduced in eslint-plugin-svelte v0.0.4
 
 ## :mag: Implementation
 
-- [Rule source](https://github.com/sveltejs/eslint-plugin-svelte/blob/main/packages/eslint-plugin-svelte/src/rules/require-target-blank-external-link.ts)
-- [Test source](https://github.com/sveltejs/eslint-plugin-svelte/blob/main/packages/eslint-plugin-svelte/tests/src/rules/require-target-blank-external-link.ts)
+- [Rule source](https://github.com/sveltejs/eslint-plugin-svelte/blob/main/packages/eslint-plugin-svelte/src/rules/invalid-encoding-characters.ts)
+- [Test source](https://github.com/sveltejs/eslint-plugin-svelte/blob/main/packages/eslint-plugin-svelte/tests/src/rules/invalid-encoding-characters.ts)

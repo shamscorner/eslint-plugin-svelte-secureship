@@ -320,6 +320,7 @@ These rules relate to possible syntax or logic errors in Svelte code:
 | Rule ID | Description |    |
 |:--------|:------------|:---|
 | [svelte/infinite-reactive-loop](https://sveltejs.github.io/eslint-plugin-svelte/rules/infinite-reactive-loop/) | Svelte runtime prevents calling the same reactive statement twice in a microtask. But between different microtask, it doesn't prevent. |  |
+| [svelte/invalid-encoding-characters](https://sveltejs.github.io/eslint-plugin-svelte/rules/invalid-encoding-characters/) | Disallow invalid encoding characters that may appear due to incorrect character encoding | :star: |
 | [svelte/no-deprecated-raw-special-elements](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-deprecated-raw-special-elements/) | Recommends not using raw special elements in Svelte versions previous to 5. | :wrench: |
 | [svelte/no-dom-manipulating](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-dom-manipulating/) | disallow DOM manipulating |  |
 | [svelte/no-dupe-else-if-blocks](https://sveltejs.github.io/eslint-plugin-svelte/rules/no-dupe-else-if-blocks/) | disallow duplicate conditions in `{#if}` / `{:else if}` chains | :star: |

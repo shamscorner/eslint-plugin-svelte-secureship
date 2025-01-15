@@ -1,5 +1,5 @@
 <p>
-	Lorem ipsum dolor sitâ€™ amet, consectetur adipisicing elit. Vero voluptatum et illum adipisci
-	cumque eos autem, tenetur assumenda, quisquam facilis necessitatibus sequi culpa. Provident sed
-	odit similique! Laudantium, ducimus quod.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptatum et illum adipisci cumque
+	eos autem, tenetur assumenda, quisquam facilis necessitatibus sequi culpa. Provident sed odit
+	similique! Laudantium, ducimus quod.
 </p>
