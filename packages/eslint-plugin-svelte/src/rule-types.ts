@@ -29,6 +29,11 @@ export interface RuleOptions {
    */
   'svelte/require-target-blank-external-link'?: Linter.RuleEntry<SvelteRequireTargetBlankExternalLink>
   /**
+   * require `target="_blank"` attribute for external links
+   * @see https://sveltejs.github.io/eslint-plugin-svelte/rules/require-target-blank-external-link-md/
+   */
+  'svelte/require-target-blank-external-link-md'?: Linter.RuleEntry<[]>
+  /**
    * system rule for working this plugin
    * @see https://sveltejs.github.io/eslint-plugin-svelte/rules/system/
    */

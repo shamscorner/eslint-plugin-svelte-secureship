@@ -1,0 +1,8 @@
+- message: External links must have target="_blank" attribute.
+  line: 1
+  column: 1
+  suggestions: null
+- message: External links must have target="_blank" attribute.
+  line: 4
+  column: 1
+  suggestions: null

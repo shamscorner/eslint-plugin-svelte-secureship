@@ -4,8 +4,17 @@
 		"target": "es5",
 		"strict": true,
 		"esModuleInterop": true,
-		"lib": ["es2015", "es2017", "esnext"],
+		"lib": [
+			"es2015",
+			"es2017",
+			"esnext"
+		],
 		"experimentalDecorators": true
 	},
-	"include": ["**/*.svelte", "**/*.ts"]
+	"include": [
+		"**/*.svelte",
+		"**/*.ts",
+		"require-target-blank-external-link-md/valid/test01-input.md",
+		"require-target-blank-external-link-md/invalid/test01-input.md"
+	]
 }

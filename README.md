@@ -327,6 +327,7 @@ These rules relate to security vulnerabilities in Svelte code:
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
+| [svelte/require-target-blank-external-link-md](https://sveltejs.github.io/eslint-plugin-svelte/rules/require-target-blank-external-link-md/) | require `target="_blank"` attribute for external links |  |
 | [svelte/require-target-blank-external-link](https://sveltejs.github.io/eslint-plugin-svelte/rules/require-target-blank-external-link/) | require `target="_blank"` attribute for external links |  |
 
 ## Best Practices

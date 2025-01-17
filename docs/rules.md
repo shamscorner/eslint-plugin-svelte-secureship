@@ -22,9 +22,10 @@ These rules relate to possible syntax or logic errors in Svelte code:
 
 These rules relate to security vulnerabilities in Svelte code:
 
-| Rule ID                                                                                    | Description                                            |     |
-| :----------------------------------------------------------------------------------------- | :----------------------------------------------------- | :-- |
-| [svelte/require-target-blank-external-link](./rules/require-target-blank-external-link.md) | require `target="_blank"` attribute for external links |     |
+| Rule ID                                                                                          | Description                                            |     |
+| :----------------------------------------------------------------------------------------------- | :----------------------------------------------------- | :-- |
+| [svelte/require-target-blank-external-link-md](./rules/require-target-blank-external-link-md.md) | require `target="_blank"` attribute for external links |     |
+| [svelte/require-target-blank-external-link](./rules/require-target-blank-external-link.md)       | require `target="_blank"` attribute for external links |     |
 
 ## Best Practices
 
