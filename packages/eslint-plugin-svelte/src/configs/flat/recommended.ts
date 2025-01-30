@@ -10,6 +10,7 @@ const config: Linter.Config[] = [
 		rules: {
 			// eslint-plugin-svelte rules
 			'svelte/invalid-encoding-characters': 'error',
+			'svelte/require-title-attribute-on-images-anchors': 'error',
 			'svelte/system': 'error'
 		}
 	}

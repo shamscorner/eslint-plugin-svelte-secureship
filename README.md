@@ -335,7 +335,7 @@ These rules relate to better ways of doing things to help you avoid problems:
 
 | Rule ID | Description |    |
 |:--------|:------------|:---|
-
+| [svelte/require-title-attribute-on-images-anchors](https://sveltejs.github.io/eslint-plugin-svelte/rules/require-title-attribute-on-images-anchors/) | Require title attribute on img and a elements for better accessibility | :star: |
 
 ## Stylistic Issues
 

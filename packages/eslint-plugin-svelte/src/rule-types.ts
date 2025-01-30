@@ -29,6 +29,11 @@ export interface RuleOptions {
    */
   'svelte/require-target-blank-external-link'?: Linter.RuleEntry<SvelteRequireTargetBlankExternalLink>
   /**
+   * Require title attribute on img and a elements for better accessibility
+   * @see https://sveltejs.github.io/eslint-plugin-svelte/rules/require-title-attribute-on-images-anchors/
+   */
+  'svelte/require-title-attribute-on-images-anchors'?: Linter.RuleEntry<[]>
+  /**
    * system rule for working this plugin
    * @see https://sveltejs.github.io/eslint-plugin-svelte/rules/system/
    */

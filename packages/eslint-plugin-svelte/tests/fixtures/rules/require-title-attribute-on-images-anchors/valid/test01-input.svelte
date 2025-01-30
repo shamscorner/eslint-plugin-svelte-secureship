@@ -4,6 +4,7 @@
 	let title = 'Dynamic Title';
 </script>
 
+<img src="/logo.png" alt="" width="70" />
 <a href="https://example.com" title="Visit Example Website">Example</a>
 <a href="/internal" title="Go to Internal Page">Internal Link</a>
 <a href={link} title="Dynamic Link">Dynamic Route</a>
