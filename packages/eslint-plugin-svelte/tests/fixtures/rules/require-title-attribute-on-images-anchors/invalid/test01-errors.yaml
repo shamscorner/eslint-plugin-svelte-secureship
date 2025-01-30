@@ -1,0 +1,48 @@
+- message: External links must have target="_blank" attribute.
+  line: 5
+  column: 1
+  suggestions: null
+- message: Links must have a title attribute.
+  line: 6
+  column: 1
+  suggestions: null
+- message: Links must have a title attribute.
+  line: 7
+  column: 1
+  suggestions: null
+- message: Links must have a title attribute.
+  line: 8
+  column: 1
+  suggestions: null
+- message: Links must have a title attribute.
+  line: 9
+  column: 1
+  suggestions: null
+- message: Images must have a title attribute.
+  line: 10
+  column: 1
+  suggestions: null
+- message: Images must have a title attribute.
+  line: 11
+  column: 1
+  suggestions: null
+- message: Images must have a title attribute.
+  line: 12
+  column: 1
+  suggestions: null
+- message: Links must have a title attribute.
+  line: 13
+  column: 1
+  suggestions: null
+- message: Images must have a title attribute.
+  line: 14
+  column: 2
+  suggestions: null
+- message: Images must have a title attribute.
+  line: 17
+  column: 2
+  suggestions: null
+- message: Links must have a title attribute.
+  line: 19
+  column: 1
+  suggestions: null
