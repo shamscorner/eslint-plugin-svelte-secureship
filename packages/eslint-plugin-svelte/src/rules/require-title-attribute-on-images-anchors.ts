@@ -10,11 +10,7 @@ function hasTitleAttribute(node: AST.SvelteStartTag) {
 		}
 
 		// Check for dynamic title attribute using bind:title
-		if (
-			attr.type === 'SvelteDirective' &&
-			attr.key.type === 'Identifier' &&
-			attr.key.name === 'title'
-		) {
+		if (attr.type === 'SvelteDirective' && attr.key.type === 'SvelteDirectiveKey') {
 			return true;
 		}
 
